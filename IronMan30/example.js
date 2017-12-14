@@ -1,0 +1,2 @@
+"!" > "#"; //false
+"Apple" < "apple"; //true
