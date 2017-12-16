@@ -1,15 +1,8 @@
-var Person = {
-	name: "小明",
-	height: 172,
-	weight: 80,
-	routine: () =>{
-		console.log('吃蛋餅');
-	},
-	1234 : "test"
-}
-Person[1234]; //test
 
-("name" in Person); //true
-Person.hasOwnProperty("name"); //true
-("toString" in Person); //true
-Person.hasOwnProperty("toString"); //false
+//Postfix
+var a = 3;
+var b = a++; // b = 3, a = 4;
+
+//Prefix
+var t = 3;
+var w = ++t; // w == 4; a == 4;
