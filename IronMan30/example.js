@@ -1,5 +1,5 @@
-var test = ['Do','Re','Mi','Fa','Sol'];
-var test1 = ['La','Si'];
-var combine = test.concat(test1,'Hello',123);
-console.log(combine); //["Do", "Re", "Mi", "Fa", "Sol", "La", "Si", "Hello", 123]
+var testNum = [4, 5,7,8];
 
+testNum.reduce((total, elements) => {
+	return total + elements;
+}); //24
