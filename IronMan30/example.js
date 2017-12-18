@@ -1,8 +1,5 @@
-var hiArray = [1,"2",["a"]];
-hiArray.length; // 3
+var test = ['Do','Re','Mi','Fa','Sol'];
+var test1 = ['La','Si'];
+var combine = test.concat(test1,'Hello',123);
+console.log(combine); //["Do", "Re", "Mi", "Fa", "Sol", "La", "Si", "Hello", 123]
 
-hiArray[4] = "hello";
-hiarray.length; //5
-delete hiArray[4];
-console.log(hiArray[4]); // undefined
-hiArray.length; //5
