@@ -1,5 +1,12 @@
-var testNum = [4, 5,7,8];
+function test() {
+	console.log('I\'m test');
+}
 
-testNum.reduce((total, elements) => {
-	return total + elements;
-}); //24
+var hiHoisting;
+test(); // 'I'm test'
+console.log(hiHoisting); //undefined
+
+hiHoisting = "Hello";
+
+
+

@@ -23,7 +23,7 @@
 	*	Recursion VS Loop 
 	*	higher-order function
 	*	built-in function & method
-* __Hoisting__
+
 * __Prototype(4)__
 * __This! (2)__
 * __Closure (3)__
