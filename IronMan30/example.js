@@ -1,12 +1,13 @@
-function test() {
-	console.log('I\'m test');
+function User(name, friends) {
+	this.name = name;
+	this.friends = friends;
+	this.greet = function() {
+		console.log('Welcome' + this.name);
+	}
 }
 
-var hiHoisting;
-test(); // 'I'm test'
-console.log(hiHoisting); //undefined
+var userA = new User('Bob', ['Ben', 'Andy']);
+var userB = new User('Chen', ['Dan', 'Roy']);
 
-hiHoisting = "Hello";
-
-
-
+console.log(userA); //User {name: "Bob", friends: Array(2), greet: ƒ}
+console.log(userB); //User {name: "Chen", friends: Array(2), greet: ƒ}
