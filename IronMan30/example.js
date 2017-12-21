@@ -1,28 +1,20 @@
+window.onload = function() {
+	var picked = Math.floor((Math.random() * 100));
+	do {
+		var num = Number(prompt('Please guess a number from 0 ~ 100'));
 
-function Employee(name, salary) {
-	this.name = name;
-	this.salary = 1000;
-	this.addSalary = function(addNum) {
-		this.salary += addNum;
-	};
-	this.skill = function() {
-		console.log('I can jump');
-	}
-} 
-
-var a = new Employee('Ben');
-a.addSalary(500);
-a.skill = function() {
-	console.log('I can fly');
+		if(num < picked) {
+			alert('Too small, try again');
+		}else if (num > picked) {
+			alert('Too large, try again');
+		}else {
+			alert('Bingo !');
+		}
+	} while( num != picked);
 }
-// const employees = [
-// 	['Alice', 1000],
-// 	['Bob', 1000]
-// ];
 
-// const addSalary = employees.map(function(el) {
-// 	const clone = el.slice();
-// 	clone[1] += 500;
-// 	return clone;
-// });
-
+function timeTicker() {
+	console.log(new Date().getSeconds());
+}
+var start = setInterval(timeTicker, 1000);
+clearInterval(start);
