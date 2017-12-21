@@ -55,20 +55,7 @@ Function除了直接用函式宣告的方式，也可以當作value assign到變
 
 正所謂做人要有國際觀，在地要有本土化，Javascript的世界也是熟知這道理，所以本土化有Local Variable，國際觀則有Global Variable，而這在之後的Scope文章內會詳加介紹。
 
-###Hoisting 
-了解完了Function的基本概念，我們來補充一下剛剛提到的Hoisting機制是怎麼回事，首先我們來看一段Code。
 
-<img style="width:100%;height:auto;padding:10px" src="../images/function6.png" />
-
-通常我們使用變數時，會先定義好才去使用，正常來說，尚未定義的變數去使用的話通常會有Error產生。
-
-然而，Javascript內提供了一個機制叫做Hoisting，實際上在Javascript執行中，會自動把定義的變數移到最上層執行，所以上面的範例中不會有Error。
-
-那實際上到底是怎麼回事呢，Javascript在程式執行時，就已經先把宣告的項目都事先存在記憶體內，也就是說當程式看到宣告項目時其實是兩個步驟的，以下見拆解。
-
-<img style="width:100%;height:auto;padding:10px" src="../images/function7.png" />
-
-上圖才是實際程式真正的執行樣子，更精確點來說，定義變數的過程可以分成 __宣告__	以及 __初始值__	，兩個動作，而宣告這個動作會優先被執行並放到記憶體中，這就是Hoisting，初始值的動作則是在此之後。這個觀念非常之重要大家千萬要記住阿 。
 
 ***
 以上就是關於Function內應該知道的大小事，但其實還有很多細節尚未提到，不過千萬不要給它害怕，我們將在之後的文章做整理，今天就先到這吧，冷冷的天趕快來一碗花生湯圓溫暖自己吧。
