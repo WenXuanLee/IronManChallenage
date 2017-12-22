@@ -1,5 +1,5 @@
 ##Scope(1)
-Scope是Javascript很重要的一個也非常需要花時間去消化的觀念，在一開始我們有講到，Javascript是一個很注重Lexical Environment的，而Scope正是其重要的原因，礙於Scope的觀念有點龐大，我們會用三天的篇幅來介紹，而今天主要注重在以下。
+Scope是Javascript很重要的一個也非常需要花時間去消化的觀念，在一開始我們有講到，Javascript是一個很注重Lexical Environment的，而Scope正是其重要的原因，礙於Scope的觀念有點龐大，我們會用兩天的篇幅來介紹，而今天主要注重在以下。
 
 *	Variable Environment解釋
 *	Sample推演
@@ -55,13 +55,13 @@ Scope是Javascript很重要的一個也非常需要花時間去消化的觀念�
 
 <img style="width:100%;height:auto;padding:10px" src="../images/scope7.png" />
 
-這是我們又要回來討論到Lexical Environment了，函式b()就圖面來看，是位於global environment之上的，也就是說，它並不是包含在函式a()當中。
+這是我們又要回來討論到Lexical Environment了，函式a()就圖面來看，是位於global environment之上的，也就是說，它並不是包含在函式b()當中。
 
-所以函式b()位於跟 var myVar = 1;同一層的，所以今天Javascript在Execution Context中找不到變數的時候，它會繼續尋找Outer reference是否有此變數。
+所以函式a()位於跟 var myVar = 1;同一層的，所以今天Javascript在Execution Context中找不到變數的時候，它會繼續尋找Outer reference是否有此變數。
 
-這個Outer Reference便是取決於此這個函式坐落於哪裡，所以函式b()實際上位於global的層級，也就是程式碼的最外層，Global environment就是其Outer Reference。
+這個Outer Reference便是取決於此這個函式坐落於哪裡，所以函式a()實際上位於global的層級，也就是程式碼的最外層，Global environment就是其Outer Reference。
 
-由此可知，今天在函式b()找不到myVar，會去Global Execution Context尋找，進而得到 1 的值。
+由此可知，今天在函式a()找不到myVar，會去Global Execution Context尋找，進而得到 1 的值。
 
 ###Scope chain
 今天三個Execution contexts被創立時，這些code具體被寫在哪裡並不重要，重要的在於我們什麼時候去呼叫這些函式。
