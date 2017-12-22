@@ -37,3 +37,5 @@ Hoisting的存在並不是要我們太過依賴於它，所以還是盡量避免
 
 ### 參考來源
 1. <a href="http://eloquentjavascript.net/00_intro.html#h_GlF1Kuv0JF" target="_blank">eloquentjavascript</a>
+
+2.  [Udemy Course - JavaScript: Understanding the Weird Parts](https://www.udemy.com/understand-javascript/learn/v4/overview)

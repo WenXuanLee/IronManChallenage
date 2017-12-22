@@ -2,12 +2,16 @@ function hello() {
 	var test = "hello world";
 }
 
-var a = "Hey";
-console.log(a);
 
-if (a === undefined) {
-	console.log('a is undefined');
-}else {
-	console.log('a is defined');
+
+function a() {
+	console.log(myVar); 
 }
-// a is undefined
+
+function b() {
+	var myVar = 2;
+	a();
+}
+var myVar = 1;
+b();
+
