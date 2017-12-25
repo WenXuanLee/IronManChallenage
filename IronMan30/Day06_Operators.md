@@ -16,7 +16,9 @@
 那前面我們知道了 value、variable、types，今天就來看看Operators吧 !
 
 ## Operator在幹嘛?
-Operator的存在其實式挺直覺，例如常見的 __= * + -__ 諸如此類，所以他實際上的用途就是在variable 與 value上面做一些行為，好比 * 就是將value做一個乘法的動作， = 就是負責assign這個動作。
+一般來說，Operator是一個特殊的函式，與一般函式的寫法不同，通常，operators讀取兩個參數後回傳一個新的結果。
+
+例如常見的 __= * + -__ 諸如此類，所以他實際上的用途就是在variable 與 value上面做一些行為，好比 * 就是將value做一個乘法的動作， = 就是負責assign這個動作。
 
 特別注意到Assignment Operators的執行是從右到左稱為 __Right-associativeity__ 以下見範例。
 

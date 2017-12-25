@@ -1,22 +1,31 @@
-function build() {
-	var arr = [];
-
-	for(var i = 0; i < 3; i++) {
-		let j = i;
-		arr.push(
-
-			//create functino as value
-			function() {
-				console.log(j);
-			}
-
-		)
-	}
-	return arr;
+function a() {
+	console.log(this);
+	this.newVar = 'hello';
 }
 
-var getArr = build();
-getArr[0](); //call the function created
-getArr[1](); //call the function created
-getArr[2](); 
+var b = function() {
+	console.log(this);
+}
 
+a();
+console.log(newVar);
+b();
+
+var c = {
+	name: 'The C',
+	log: function() {
+
+
+		this.name = 'The C update'
+		console.log(this);
+
+		var setName = function(newName) {
+			this.name = newName;
+		}.bind(this);
+		setName('Big C');
+		console.log(this);
+	}
+
+}
+
+c.log(); 
