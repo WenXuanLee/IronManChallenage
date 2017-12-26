@@ -62,7 +62,7 @@ Again，還是指到window，不管是a或是b的execution context中，雖然�
 簡易的方法就是在確定this指到我們要的物件時，將它存取到一個變數中，之後透過這個變數去使用，如上圖的self。
 
 ### 當我們bind在一起
-上面我們提到一個簡易的方法可以確保this所指向的物件，而其時Javascript也有一個方法叫bind()可以解決此類的問題，透過bind可以將this綁定在物件，而不要指到window去。
+上面我們提到一個簡易的方法可以確保this所指向的物件，而其時Javascript也有一個方法叫bind()可以解決此類的問題，透過bind可以將this綁定在物件，而不要指到window去，後面會再介紹一次。
 
 <img style="width:100%;height:auto;padding:10px" src="../images/this10.png" />
 
