@@ -45,7 +45,21 @@ Recursion擁有比較好的可讀性，但犧牲了效能，而Loop的方式擁�
 ##Constructors
 Function在Javascript中也可以被當成Constructor使用，這樣的函示我們會稱為構造函式，以下為範例。
 
-<img style="width:100%;height:auto;padding:10px" src="../images/constructor.png" />
+```
+function User(name, friends) {
+	this.name = name;
+	this.friends = friends;
+	this.greet = function() {
+		console.log('Welcome' + this.name);
+	}
+}
+
+var userA = new User('Bob', ['Ben', 'Andy']);
+var userB = new User('Chen', ['Dan', 'Roy']);
+
+console.log(userA); // User {name: "Bob", friends: Array(2), greet: ƒ}
+console.log(userB); // User {name: "Chen", friends: Array(2), greet: ƒ}
+```
 
 *	User就是一個構造函式，也就是一個Constructor。
 *	new運算子先幫我們建立一個空物件，在來執行構造函式。
@@ -54,6 +68,28 @@ Function在Javascript中也可以被當成Constructor使用，這樣的函示我
 *	最後return object存回給變數。
 *	透過constructor new 出來的物件都稱為instances。
 
+### new keyword
+我們看到了上述範例new的功能，而實際上new 是個運算子，當Javascript Engine讀到這個運算子時，會建立一個空物件，並接著呼叫後面接的函式，並將函式裡的this指定到建立的空物件上，我們將範例稍微修改一下看看this指哪去。
+
+```
+function User(name, friends) {
+	console.log(this); //User{}
+	this.name = name;
+	this.friends = friends;
+	this.greet = function() {
+		console.log('Welcome' + this.name);
+	}
+
+}
+
+var userA = new User('Bob', ['Ben', 'Andy']);
+
+
+console.log(userA); 
+
+```
+
+在透過this 將property & method 設定給空物件時，我們看到this是指向 User {}的，這也是new帶來的功用，而如果今天函式是有return值的話，
 ####為什麼要用Constructor?
 透過上面的例子，其實你不難發現，很多時候我們常常會需要建造出許多同性質的物件，但只是裡面的值不一樣而已，好比我剛舉例的User，User都有名字都有朋友，只是內容物不一樣，這時候有Constructor的話就可以省略掉重複的動作，而這也是Function一個很強力的功用。
 
