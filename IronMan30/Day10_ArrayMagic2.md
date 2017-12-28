@@ -1,9 +1,9 @@
-##Array Magic Part 2
-Array常見的用法來到第二Part，礙於上次介紹的好像太冗長了，所以特別將一部份再挪來新的篇幅，而今天就要介紹最後一段Magic，也就是Iteration methods。這部分主要會講到五個我比較常看到的method，分別是	__filter(),forEach(),map(),reduce(),some()__ 
+## Array Magic Part 2
+Array常見的用法來到第二Part，而今天就要介紹最後一段Magic，也就是Iteration methods。這部分主要會講到五個我比較常看到的method，分別是	__filter(),forEach(),map(),reduce(),some()__ 
 記得大家一樣要吃完早餐再來看，元氣的一天就從早餐開始阿 !
 
 
-###filter
+### filter
 filter主要去篩選出符合callback Function條件的元素
 
 > syntax - var newArray = arr.filter(callback[, thisArg])
@@ -16,7 +16,7 @@ filter主要去篩選出符合callback Function條件的元素
 *	filter是不會影響原陣列的內容的。
 *	callback Function內的參數依序為原Array的(element, index, array)
 
-###forEach
+### forEach
 forEach其實就是簡易的for迴圈，將每一個element套入在參數提供的function。
 
 >	syntax - array.forEach(function callback(currentValue[, index[, array]]) {
@@ -29,7 +29,7 @@ forEach其實就是簡易的for迴圈，將每一個element套入在參數提供
 *	callback Function內的參數依序為原Array的(element, index, array)
 *	注意到ForEach並	__不回傳任何東西__	。
 
-###map
+### map
 
 map跟forEach很像，都是將每一個元素丟入所提供的function裡面，但特別注意到，map是有回傳一個新array的
 
@@ -43,7 +43,7 @@ map跟forEach很像，都是將每一個元素丟入所提供的function裡面�
 
 
 
-###some & every
+### some & every
 some是來check Array內是否至少有一個元素滿足function的條件。
 every則是是check Array內每一個元素滿足function的條件。
 
@@ -56,7 +56,7 @@ every則是是check Array內每一個元素滿足function的條件。
 *	some & every最後會回傳Boolean值回來。
 *	callback Function內的參數依序為原Array的(element, index, array)
 
-###reduce
+### reduce
 reduce跟上述幾個method的差異滿多的，其機制是可以將上一個回傳的值再拿來做計算。
 
 >	syntax - array.reduce(callback[, initialValue])
@@ -74,7 +74,7 @@ reduce跟上述幾個method的差異滿多的，其機制是可以將上一個�
 | 3rd | 9 | 7 || 2 || [4, 5,7,8] || 16 |
 | 4th | 16 | 8 || 3 || [4, 5,7,8] || 24 |
 
-##碎碎念時間
+## 碎碎念時間
 以上包含今天的文章，Array的內容就正式介紹完了，其實之前還在猶豫要不要一個一個這樣介紹Method，一開始是認為這些基本的Method看一看文件就大概會用了，但後來想想，其實method中都有一些細節容易遺忘，例如有沒有真的動到原Array，或者method 回傳的是什麼，諸如此類的小問題，後來還是決定一個一個介紹，雖然可能會有錯誤就是，還希望大家海涵。
 
 

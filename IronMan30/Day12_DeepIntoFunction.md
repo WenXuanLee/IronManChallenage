@@ -73,7 +73,7 @@ console.log(userB); // User {name: "Chen", friends: Array(2), greet: ƒ}
 
 ```
 function User(name, friends) {
-	console.log(this); //User{}
+	console.log(this); // User {}
 	this.name = name;
 	this.friends = friends;
 	this.greet = function() {
@@ -89,8 +89,13 @@ console.log(userA);
 
 ```
 
-在透過this 將property & method 設定給空物件時，我們看到this是指向 User {}的，這也是new帶來的功用，而如果今天函式是有return值的話，
-####為什麼要用Constructor?
+在透過this 將property & method 設定給空物件時，我們看到this是指向 User {}的，這也是new帶來的功用。
+
+
+####Function Constructor?
+
+當今天看到function constructor指的就是，函式是被用來 __建立物件__ 的，而這個函式裡的 this 會指向到一個 new 的空物件，這個物件會在執行完這個一般函式之後自動回傳回來。
+
 透過上面的例子，其實你不難發現，很多時候我們常常會需要建造出許多同性質的物件，但只是裡面的值不一樣而已，好比我剛舉例的User，User都有名字都有朋友，只是內容物不一樣，這時候有Constructor的話就可以省略掉重複的動作，而這也是Function一個很強力的功用。
 
 ##IIFE
