@@ -8,6 +8,7 @@
 3. Default, Rest, Spread
 4. Template String Literals
 5. Enhanced Object Literals
+
 ## Block Scoped Variables
 我們知道再Javascript裡面宣告一個變數我們都用var，而再ES6裡面多了兩個宣告變數的方法 - __let__ 、 __const__ 。
 
