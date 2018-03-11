@@ -1,4 +1,4 @@
-##This
+## This
 今天我們講講This，到底this是this什麼東西，榮登Javascript界Top3疑惑的傢伙，常常看到別人的程式碼this來this去的到底在搞什麼鬼，自己用的時候卻又不明所以，模模糊糊的，今天我們就來揭開這團迷霧吧 !
 
 ## Throw back creation phase
@@ -71,10 +71,10 @@ ES6新提供的arrow function也可以解決這類問題，而詳細的內容就
 
 <img style="width:100%;height:auto;padding:10px" src="../images/this10.png" />
 
-*	arrow function - (argu, argu1...) => { ... }
+* arrow function - (argu, argu1...) => { ... }
 
 ***
-以上就是今天的內容了，小弟常常被this搞得死去活來，希望透過今天的範例，大家可以減少一些跟我一樣死去活來的狀況，以上就是今天的內容嚕。
+以上就是今天的內容了，小弟常常被this搞得死去活來，希望透過今天的範例，大家可以減少一些跟我一樣死去活來的狀況，雖然我現在還是死去活來的，以上就是今天的內容嚕。
 
 ### 參考來源
 1.  [Udemy Course - JavaScript: Understanding the Weird Parts](https://www.udemy.com/understand-javascript/learn/v4/overview)

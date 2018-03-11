@@ -1,4 +1,4 @@
-##Constructors & prototype
+## Constructors & prototype
 前面我們提到了prototype的概念，也知道了物件裡的prototype chain是怎麼回事，我們回想一下創造物件的方式有哪些，除了一般的宣告，還有一個在function介紹的方式，也就是constructor，那透過constructor創立的物件如何去設定它的prototype呢?
 
 今天我們就來探討一下這個問題

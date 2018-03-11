@@ -5,10 +5,10 @@ Function在Javascript是它馬重要的傢伙，記住它一個特別的特性�
 
 <img style="width:100%;height:auto;padding:10px" src="../images/high.png" />
 
-*	之前介紹的filter就是一個higher-order function
-*	接受一個function (如果Area === Taipei)為參數。
+* 之前介紹的filter就是一個higher-order function
+* 接受一個function (如果Area === Taipei)為參數。
 
-###好處是什麼 ?
+### 好處是什麼 ?
 試著想想，如果剛剛的範例不用filter來寫的話該如何做?
 
 <img style="width:100%;height:auto;padding:10px" src="../images/high1.png" />
@@ -22,14 +22,14 @@ Function在Javascript是它馬重要的傢伙，記住它一個特別的特性�
 
 透過Higher-order function，我們可以將簡單的函式，如上面條件判斷式的簡單函式當作參數，一步一步串成規模更大的程式，這樣的設計方式，不僅讓程式碼乾淨俐落，也不容易產生Bug，更ㄅㄧㄤˋ的是可以重複使用阿 ! 
 
-*	簡潔程式碼，不容易出錯。
-*	函式可以再重複使用。
-*	可以將大程式切割成簡單函式來組織。
+* 簡潔程式碼，不容易出錯。
+* 函式可以再重複使用。
+* 可以將大程式切割成簡單函式來組織。
 
-##Function Programming VS OOP
+## Function Programming VS OOP
 上面我們提到了Function Programming(FP)，其實還有另外一種概念就是Object-oriented Programming(OOP)，我們就來稍微介紹一下兩者的設計概念以及比較。
 
-###OOP
+### OOP
 主要用Objects來達成程式目的，每個物件中有各自的屬性及方法，而有些物件是有共有特性的，透過這些物件互相的作用，每個物件都可以處理其相對應的動作並且將處理好的內容再傳達給其他物件。
 
 而OOP最核心的概念就是 - 封裝、繼承、多型。
@@ -65,27 +65,27 @@ Function在Javascript是它馬重要的傢伙，記住它一個特別的特性�
 *   多型 - 今天想要飛，a員工可以完成。
 *	好處 - 對於新的Data進來並做處理是很簡單的，就再新增一個新的物件，但實際行為得先設計好，也就是Constructor的部分。
 
-###FP
+### FP
 完成事情的方式，用的是固定的函式，也就是這個函式永遠運作一樣的事情，不管餵進來的是什麼，都不會影響Data的結構，也就是說資料是被分開存放並且不可變動的，而主要完成動作就是藉由組織這一堆函式去完成一個複雜的任務。
 
 範例 - 情境為幫員工加薪 FP方式
 
 <img style="width:100%;height:auto;padding:10px" src="../images/high3.png" />
 
-*	function只注重加薪的功能，並只做同一件事情。
-*	回傳的資料都是一個新的資料結構(clone)，不會影響原資料。
-*	好處 - 對於新增動作是很容易的，好比今天想要減薪，升職，新增功能是很簡單的，因為data都是階段性並回傳新的資料結構，不用擔心影響餵進來的資料。
+* function只注重加薪的功能，並只做同一件事情。
+* 回傳的資料都是一個新的資料結構(clone)，不會影響原資料。
+* 好處 - 對於新增動作是很容易的，好比今天想要減薪，升職，新增功能是很簡單的，因為data都是階段性並回傳新的資料結構，不用擔心影響餵進來的資料。
 
-###兩者的取捨
+### 兩者的取捨
 其實兩者沒有一定的優劣與否，這是沒有絕對的，實際上考量的點在於程式欲解決的問題啊。
 
-*	OOP適合函式的動作是固定的，而資料是比較會變動的部分，只要先想好動作是什麼，新增資料並做動作就顯得很容易。
-*	FP適合資料是固定的，而函式是需要各種更新的，也就是動作會比較多樣化。 
+* OOP適合函式的動作是固定的，而資料是比較會變動的部分，只要先想好動作是什麼，新增資料並做動作就顯得很容易。
+* FP適合資料是固定的，而函式是需要各種更新的，也就是動作會比較多樣化。 
 
 ***
 但由於小弟解起來還是有點卡卡的，自己看過也覺得好像哪裡怪怪的，但就是不知道好像哪裡怪怪的阿 !希望看過這篇文的大神們，可以幫忙提出建議並糾正我的錯誤QQ，以上就謝謝大家囉。
 
 
 ### 參考來源
-1. <a href="http://eloquentjavascript.net/00_intro.html#h_GlF1Kuv0JF" target="_blank">eloquentjavascript</a>
-2. <a href="https://medium.com/humans-create-software/a-dirt-simple-introduction-to-higher-order-functions-in-javascript-b33bf9e19056" target="_blank">A dirt simple introduction to higher order functions in JavaScript.</a>
+1. [eloquentjavascript](http://eloquentjavascript.net/00_intro.html#h_GlF1Kuv0JF)
+2. [A dirt simple introduction to higher order functions in JavaScript](https://medium.com/humans-create-software/a-dirt-simple-introduction-to-higher-order-functions-in-javascript-b33bf9e19056")

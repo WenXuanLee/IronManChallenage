@@ -1,4 +1,4 @@
-##ES6
+## ES6
 我們對於Javascript已經有了初步的認識，而在前面的文章中也提到，建議大家以未來發展的方式去撰寫Javascript Code，也就是ES6的語法，當然Javascript是一直持續進化的，目前ES6便是近期的主流。
 
 那到底ES6新增的什麼好用的規範或者語法，我們就來介紹介紹吧，主要會有以下內容
@@ -277,3 +277,4 @@ let user = {
 
 ### 參考來源
 1.  [Udemy Course - JavaScript: Understanding the Weird Parts](https://www.udemy.com/understand-javascript/learn/v4/overview)
+2. [Modern Web and App Programming](https://nthu-datalab.github.io/webapp/index.html)

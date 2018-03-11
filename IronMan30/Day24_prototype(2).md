@@ -1,4 +1,4 @@
-##Everything is Object
+## Everything is Object
 今天來談談prototype一些注意的細節，我們知道Javascript裡面所有的變數都是一個物件不然就是Primtive，也就是說除了primitive - number, string, boolean, ect 以外，全都是物件 - function、array、basic objects. 所有的物件以及primitive都有prototype。
 
 但唯一有一個例外，base object，也就是object的最底層。
@@ -43,7 +43,7 @@ array的proto我們看到了仍然是一個object，而這個object包含了常�
 ## reflection & extend
 接下來我們深入探討一下object的兩個觀念，有助於我們理解prototype的運作
 
-###Reflection
+### Reflection
 Reflection的定義為，object可以查看自己，列出並更改自己的properties & methods。所以Javascript Object能夠觀察自己的properties & methods。
 
 透過這樣的一個特性我們可以實行一個好用的pattern - extend。

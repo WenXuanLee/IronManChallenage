@@ -1,14 +1,14 @@
-##prototype
+## prototype
 Prototype可以說是Javascript至關重要的一環，嚴格來說Prototype不管在哪個程式語言都是很重要的觀念，但Javascript的prototype觀念又跟多數的程式語言有著特別的不同。
 
 今天就來討論一下最根本的觀念，Object-oriented Javascript & Prototypal Inheritance。
 
 當提到了object-oriented，我們主要會專注在物件的創造，因為這個Part藏著許多讓人混淆的部分。
 
-##Inheritance
+## Inheritance
 首先我們先理解繼承的概念，Javascript內的繼承核心概念就是，是一個物件可以access到另一個物件的property、method。
 
-###Classical Inheritance 
+### Classical Inheritance 
 
 如果你學過Java或者其他程式語言，相信你對class一定不陌生，透過class可以分享methods & properties給class的instance。
 

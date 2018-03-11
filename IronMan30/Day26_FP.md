@@ -1,4 +1,4 @@
-##Functional Programming
+## Functional Programming
 
 我們明白Javascript的函式是first class function，也就是function可以被當成value,parameter，甚至return 一個function，這樣的設計就讓我們可以延伸到一個程式設計的概念，funtional programming，前面有提到，但挺簡略的，今天就來了解這個程式設計概念吧。
 

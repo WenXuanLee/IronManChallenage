@@ -1,4 +1,4 @@
-##Closures
+## Closures
 Closures可以說是Javascript內的九陰真經，想真的精通Javascript，這是絕對、必須、不得不去完整明白的一個概念。而同時它也是惡名昭彰的難以理解，小魯我到現在至今是深受其擾，就讓我們一起再來重新認識吧 !
 
 ## Closure is on fire
@@ -14,9 +14,9 @@ Closures可以說是Javascript內的九陰真經，想真的精通Javascript，�
 
 這個神祕的力量就是closure，讓我們再看看exeuction stack了解其中的奧秘。
 
-*	程式碼執行到greet assign給sayWelcome，呼叫greet()並創建execution stack，當結束時回傳一個function expression。
+* 程式碼執行到greet assign給sayWelcome，呼叫greet()並創建execution stack，當結束時回傳一個function expression。
 <img style="width:100%;height:auto;padding:10px" src="../images/closure2.png" />
-*	程式執行完畢，return回來後，execution context pop out
+* 程式執行完畢，return回來後，execution context pop out
 <img style="width:100%;height:auto;padding:10px" src="../images/closure3.png" />
 
 問題來了，我們知道每一個execution context在記憶體中有一個空間，讓其中的變數以及函式可以是有效存活的，上面範例中，這個空間發生了什麼事?

@@ -1,11 +1,11 @@
-##Scope(2)
+## Scope(2)
 在昨天我們大概了解了Scope的原理，避免大家有瞬間失憶的困擾，我們複習一下，當我們提到 __Scope__	就要記得想到，我們在哪裡可以存取到變數，當我們想到 __Scope Chain__	就要懷念一下，那些由outer references組成的連結。
 
-那麼今天我們就來看一下Scope觀念裡，無敵天尊Lexical environment的變化。
+那麼今天我們就來看一下Scope觀念裡，Lexical environment的變化。
 
-###Lexical Environment sample
+### Lexical Environment sample
 
-####Sample Review
+#### Sample Review
 想一想函式a( )坐落於哪個位置?
 <img style="width:100%;height:auto;padding:10px" src="../images/scope8.png" />
 相信你一定知道，函式a( )位於global environment，實際上可以想像成它是連結在global object的，函式a( )具體是與myVar在同一個層級的。
@@ -14,7 +14,7 @@
 
 所以今天a裡面找不到myVar就去外面一層找，這是上一次提到的沒錯吧? 今天若我們更改函式a的lexical environment呢?
 
-####Lexical Environment change
+#### Lexical Environment change
 今天我們把程式碼改成以下。
 
 <img style="width:100%;height:auto;padding:10px" src="../images/scope9.png" />
